@@ -1,0 +1,85 @@
+:root{
+  --clr-neutral-900: hsl(207,19%,9%);
+  --clr-accent-400 : rgb(6, 106, 87);
+} 
+
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+.body1{
+  padding-top: 1rem;
+  display: grid;
+  min-height: 100vh;  
+  place-items: center;
+  line-height: 1.6;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnEpboPEPlqtT-8JuNzS-2AjW_3m4v8nLKQ&usqp=CAU");
+}
+.card{
+  border: 2px solid white;
+  padding: 20px;
+  max-width: 70rem;
+  margin: 20px;
+  transition: 500ms ease;
+  display: flex;
+  flex-direction: column;
+}
+.Imgbox{
+  min-width: 60vh;
+  min-height: 30vh;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.card-content{
+  display: flex;
+  flex-direction: row;
+}
+.title{
+  position: relative;
+  max-width: 100%;
+  width: max-content;
+  color: rgb(105, 189, 216);
+}
+.title::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: lightblue;
+  bottom: 0;
+  left: 0;
+}
+.button{
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: blanchedalmond;
+  background-color: rgb(69, 90, 92);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  transition: 250ms ease;
+}
+.button:hover,.button:focus{
+  background-color: beige;
+  color: rgb(50, 4, 24);
+}
+.details{
+  color: white;
+  
+}
+
+.header1 
+{
+  width:50vw;
+  height: 1.5rem;
+}
+.search
+{
+  width: 100%;
+  border-radius: 6px;
+  height: 100%;
+}
